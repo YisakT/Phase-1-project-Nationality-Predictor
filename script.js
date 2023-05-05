@@ -32,4 +32,9 @@ document.getElementById("submit-button").onclick = function(event) {
                     const funFactElement = document.createElement("p");
                     funFactElement.textContent = `Fun fact: The capital city of ${prediction.countryName} is ${prediction.capitalCity}.`;
                     predictionElement.appendChild(funFactElement);
+                    resultContainer.appendChild(predictionElement);
+                });
+            });
+        });
+};
                   
