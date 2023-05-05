@@ -37,4 +37,11 @@ document.getElementById("submit-button").onclick = function(event) {
             });
         });
 };
+
+document.getElementById("input-name").onkeydown = function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("submit-button").click();
+    }
+};
                   
