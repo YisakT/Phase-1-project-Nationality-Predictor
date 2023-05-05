@@ -28,4 +28,5 @@ document.getElementById("submit-button").onclick = function(event) {
                     const flagImage = document.createElement("img");
                     flagImage.src = prediction.flagUrl;
                     flagImage.alt = `${prediction.countryId} flag`;
-
+                    predictionElement.appendChild(flagImage);
+                  
