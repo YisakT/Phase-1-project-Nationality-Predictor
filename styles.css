@@ -3,47 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #333;
-    color: #FFD700;
+    color: mediumseagreen;
     background-image: url('https://th.bing.com/th/id/R.56df270a2b7122716bd1b1e280e6a6af?rik=IwIXXEPJUiW1OQ&pid=ImgRaw&r=0');
     background-size: cover;
-  }
-  #container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h1 {
-    text-align: center;
-  }
-  p {
-    font-size: 18px;
-  }
-  #input-name {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid #ccc;
-  }
-  #input-name:focus {
-    outline: none;
-    border-bottom: 2px solid #4CAF50;
-  }
-  #submit-button {
-      width:100%;
-      background-color:#4CAF50;
-      color:white;
-      padding:14px,20px;
-      margin:8px,0;
-      border:none;
-      border-radius:4px;
-      cursor:pointer
-  }
-  #submit-button:hover{
-      background-color:#45a049
-  }
-  #result{
-      text-align:center
-  }
-  
+}
