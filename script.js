@@ -20,3 +20,6 @@ document.getElementById("submit-button").onclick = function(event) {
                     resultContainer.removeChild(resultContainer.firstChild);
                 }
                 const resultHeader = document.createElement("p");
+                resultHeader.textContent = `The predicted nationalities for the name ${name} are:`;
+                resultContainer.appendChild(resultHeader);
+
