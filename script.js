@@ -13,4 +13,7 @@ document.getElementById("submit-button").onclick = function(event) {
                         const flagUrl = countryData[0].flags.png;
                         return {countryId: prediction.country_id, probability: prediction.probability, flagUrl: flagUrl, countryName: countryName, capitalCity: capitalCity};
                     });
+            });
+            Promise.all(predictions).then(predictions => {
+                    });
 }
