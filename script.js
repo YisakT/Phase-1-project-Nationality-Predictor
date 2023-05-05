@@ -15,5 +15,7 @@ document.getElementById("submit-button").onclick = function(event) {
                     });
             });
             Promise.all(predictions).then(predictions => {
-                    });
-}
+                const resultContainer = document.getElementById("result");
+                while (resultContainer.firstChild) {
+                    resultContainer.removeChild(resultContainer.firstChild);
+                }
