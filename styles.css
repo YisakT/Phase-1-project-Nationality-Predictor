@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #333;
     color: #FFD700;
+    background-image: url('https://th.bing.com/th/id/R.56df270a2b7122716bd1b1e280e6a6af?rik=IwIXXEPJUiW1OQ&pid=ImgRaw&r=0');
+    background-size: cover;
   }
   #container {
     max-width: 600px;
