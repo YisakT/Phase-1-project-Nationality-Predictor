@@ -19,3 +19,4 @@ document.getElementById("submit-button").onclick = function(event) {
                 while (resultContainer.firstChild) {
                     resultContainer.removeChild(resultContainer.firstChild);
                 }
+                const resultHeader = document.createElement("p");
