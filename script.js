@@ -22,4 +22,7 @@ document.getElementById("submit-button").onclick = function(event) {
                 const resultHeader = document.createElement("p");
                 resultHeader.textContent = `The predicted nationalities for the name ${name} are:`;
                 resultContainer.appendChild(resultHeader);
+                predictions.forEach(prediction => {
+                    const predictionElement = document.createElement("p");
+                    predictionElement.textContent = `${prediction.countryId}: ${prediction.probability}`;
 
