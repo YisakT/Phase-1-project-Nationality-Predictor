@@ -25,4 +25,7 @@ document.getElementById("submit-button").onclick = function(event) {
                 predictions.forEach(prediction => {
                     const predictionElement = document.createElement("p");
                     predictionElement.textContent = `${prediction.countryId}: ${prediction.probability}`;
+                    const flagImage = document.createElement("img");
+                    flagImage.src = prediction.flagUrl;
+                    flagImage.alt = `${prediction.countryId} flag`;
 
