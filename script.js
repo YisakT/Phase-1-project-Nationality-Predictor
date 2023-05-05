@@ -29,4 +29,7 @@ document.getElementById("submit-button").onclick = function(event) {
                     flagImage.src = prediction.flagUrl;
                     flagImage.alt = `${prediction.countryId} flag`;
                     predictionElement.appendChild(flagImage);
+                    const funFactElement = document.createElement("p");
+                    funFactElement.textContent = `Fun fact: The capital city of ${prediction.countryName} is ${prediction.capitalCity}.`;
+                    
                   
