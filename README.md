@@ -21,6 +21,5 @@ Nationality Predictor is a simple web app that predicts the nationality of a giv
 - CSS
 - JavaScript
 - [Nationalize API](https://nationalize.io/)
-- [countryflags.io API](https://www.countryflags.io/)
 - [REST Countries API](https://restcountries.com/)
 
