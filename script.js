@@ -18,9 +18,9 @@ document.getElementById("submit-button").onclick = function(event) {
                 return fetch(`https://restcountries.com/v3.1/alpha/${prediction.country_id}`)
                 .then(response => response.json())
                 .then(countryData => {
-                    const countryName = countryData[0].name.common;
-                    const capitalCity = countryData[0].capital[0];
-                    const flagUrl = countryData[0].flags.png;
+                    const countryName = countryData.length > 0 && countryData[0].name ? countryData[0].name.common : 'unknown';
+                    const capitalCity = countryData.length > 0 && countryData[0].capital ? countryData[0].capital[0] : 'unknown';
+                    const flagUrl = countryData.length > 0 && countryData[0].flags ? countryData[0].flags.png : 'unknown';
                     return {countryId: prediction.country_id, probability: prediction.probability, flagUrl: flagUrl, countryName: countryName, capitalCity: capitalCity};
                 });
             });
